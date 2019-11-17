@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_view_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/special_elite"
+        android:layout_alignParentTop="true"
+        android:text="date"
+        android:textColor="#110133"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/text_view_time"
+        android:textSize="24sp"
+        android:textColor="#110133"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/special_elite"
+        android:text="time"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/text_view_date"/>
+
+    <TextView
+        android:id="@+id/text_view_info"
+        android:textSize="16sp"
+        android:textColor="#00918e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/special_elite"
+        android:text="Express yourself below"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/text_view_time"/>
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_info"
+        android:gravity="center"
+        android:enabled="true"
+        android:focusedByDefault="true"
+        android:fontFamily="@font/special_elite"
+        android:hapticFeedbackEnabled="true"
+        android:hint="What happened!How do you feel?"
+        android:autofillHints="enter"
+        android:scrollbars="none"/>
+
+    <Button
+        android:id="@+id/make_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext"
+        android:text="Add this!"
+        android:enabled="false"
+        android:fontFamily="@font/special_elite"/>
+
+    <Button
+        android:id="@+id/view_database"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/make_query"
+        android:fontFamily="@font/special_elite"
+        android:text="View Information" />
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/display_info"
+    android:alpha="@android:integer/config_shortAnimTime"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/display_info_text_view"
+        android:scrollbars="vertical"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/special_elite"
+        android:textSize="22sp"
+        />
+
+</LinearLayout>
